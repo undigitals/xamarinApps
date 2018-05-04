@@ -8,12 +8,10 @@
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <!---->
         <Label BindingContext="{x:Reference slider}"
-        Text="{Binding
-            Path=Value, 
+        Text="{Binding Value, 
             StringFormat='Value is {0:F2}' }" 
 
-        Opacity="{Binding
-            Path=Value }"
+        Opacity="{Binding Value }"
         x:Name="label"/>
         <!--slider , valueChanged is eventHandler x:name is "html id" -->
         <Slider x:Name="slider"/>
