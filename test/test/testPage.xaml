@@ -3,18 +3,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:test"
     x:Class="test.testPage">
-    
-   <!--StackLayout is just like "Container" in html-->
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+    <StackLayout BindingContext="{x:Reference slider}" HorizontalOptions="Center" VerticalOptions="Center">
         <!---->
-        <BoxView Color="Lime" Opacity="{Binding Source={x:Reference slider}, Path=Value}"/>
-        <Label BindingContext="{x:Reference slider}" 
-        Text="{Binding Value, 
+        <BoxView Color="Lime" Opacity="{Binding Value}"/>
+        <Label
+            
+            Text="{Binding Value, 
             StringFormat='Value is {0:F2}' }" 
 
-        Opacity="{Binding Value }"
-        x:Name="label"/>
-        <!--slider , valueChanged is eventHandler x:name is "html id" -->
+            Opacity="{Binding Value }"
+          />
         <Slider x:Name="slider"/>
     </StackLayout>
-</ContentPage>
+</ContentPage> 
