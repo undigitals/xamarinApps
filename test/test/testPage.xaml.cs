@@ -7,10 +7,13 @@ namespace test
         public testPage()
         {
             InitializeComponent();
-        }
-        void Handle_Clicked(object sender, System.EventArgs e)
-        {
-            DisplayAlert("Title", "Hello world", "ok");
+
+            Content = new Label
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Text = "Hello World"
+            };
         }
 
     }

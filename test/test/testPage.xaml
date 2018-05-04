@@ -3,6 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:test"
     x:Class="test.testPage">
-	<Button HorizontalOptions = "Center" VerticalOptions="Center" Text="Click me" 
-        Clicked="Handle_Clicked" ></Button>
+	<Label HorizontalOptions="Center" VerticalOptions="Center" 
+        Text="Hello World"></Label>
 </ContentPage>
