@@ -7,7 +7,8 @@
    <!--StackLayout is just like "Container" in html-->
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <!---->
-        <Label BindingContext="{x:Reference slider}"
+        <BoxView Color="Lime" Opacity="{Binding Source={x:Reference slider}, Path=Value}"/>
+        <Label BindingContext="{x:Reference slider}" 
         Text="{Binding Value, 
             StringFormat='Value is {0:F2}' }" 
 
