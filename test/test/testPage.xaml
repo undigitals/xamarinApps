@@ -6,9 +6,14 @@
     
    <!--StackLayout is just like "Container" in html-->
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <!--Label is just a label in html-->
-        <Label Text="Hello World" x:Name="label"/>
+        <!---->
+        <Label Text="{Binding 
+        Source={x:Reference slider}, 
+        Path=Value, 
+        StringFormat='Value is {0:F2}' }" 
+            
+        x:Name="label"/>
         <!--slider , valueChanged is eventHandler x:name is "html id" -->
-        <Slider ValueChanged="Handle_ValueChanged" x:Name="slider"/>
+        <Slider x:Name="slider"/>
     </StackLayout>
 </ContentPage>
