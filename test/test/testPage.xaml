@@ -4,6 +4,16 @@
     xmlns:local="clr-namespace:test"
     x:Class="test.testPage">
 
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+            iOS="0,20,0,0"
+            Android="0,40,0,0">
+        </OnPlatform>
+        
+    </ContentPage.Padding>
+
+    
     <StackLayout BindingContext="{x:Reference slider}" HorizontalOptions="Center">
         
         <BoxView Color="Lime" Opacity="{Binding Value}"/>
