@@ -3,8 +3,8 @@
     <Files>
       <File FileName="test/App.xaml.cs" Line="28" Column="6" />
       <File FileName="test/App.xaml" Line="8" Column="1" />
-      <File FileName="test/testPage.xaml" Line="7" Column="32" />
-      <File FileName="test/testPage.xaml.cs" Line="10" Column="10" />
+      <File FileName="test/testPage.xaml" Line="20" Column="1" />
+      <File FileName="test/testPage.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

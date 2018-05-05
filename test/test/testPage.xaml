@@ -4,8 +4,8 @@
     xmlns:local="clr-namespace:test"
     x:Class="test.testPage">
 
-    <StackLayout BindingContext="{x:Reference slider}" HorizontalOptions="Center" VerticalOptions="Center">
-        <!---->
+    <StackLayout BindingContext="{x:Reference slider}" HorizontalOptions="Center">
+        
         <BoxView Color="Lime" Opacity="{Binding Value}"/>
         <Label
             
